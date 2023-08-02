@@ -3,7 +3,7 @@
     - COMMAND
         - [start]
             - PS) cd ./testenv
-            - PS) docker build -t sqpltest .
+            - PS) docker build -t sqltest .
             - PS) docker run --name sqltest -e MYSQL_ROOT_PASSWORD=mysql -d -it sqltestenv
             - PS) docker exec -it sqltest bash -p
             - $ mysql -u root -p
